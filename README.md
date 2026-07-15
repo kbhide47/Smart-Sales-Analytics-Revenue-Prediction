@@ -267,8 +267,24 @@ Electronics & Telecommunication Engineering
 
 Python | SQL | Machine Learning | Data Analytics | Generative AI | RAG
 
----
 
 # ⭐ If you found this project useful, consider giving it a Star.
+
+## 📬 Contact
+
+- 📧 Email: kbhide47@gmail.com
+
+- 💼 LinkedIn : https://www.linkedin.com/in/kasturi-bhide-78334035a/
+
+- 🐙 GitHub: https://github.com/kbhide47
+
+---
+
+⭐ If you found this project useful, consider giving it a star!
+
+
+
+
+
 
 
