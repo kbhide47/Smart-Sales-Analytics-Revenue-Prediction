@@ -265,29 +265,6 @@ Aspiring Data Engineer | Data Analyst | Machine Learning Enthusiast | Data Scien
 
 ⭐ If you found this project useful, consider giving it a star!
 =======
-## 📅 Progress
 
-### ✅ Day 1
-
-- Project setup
-- Folder structure creation
-- Virtual environment setup
-- Installed required libraries
-- Dataset imported
-- Data loading using Pandas
-- Displayed dataset information
-
----
-
-## 🚀 Upcoming Work
-
-- Data Cleaning
-- Exploratory Data Analysis
-- Data Visualization
-- SQL Analysis
-- Feature Engineering
-- Machine Learning
-- Streamlit Dashboard
-- Project Hosting
 
 
