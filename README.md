@@ -1,5 +1,6 @@
 # 📊 Smart Sales Analytics & Revenue Prediction System
 
+<<<<<<< HEAD
 An end-to-end Data Analytics and Machine Learning project that extracts, cleans, analyzes, and visualizes retail sales data, performs SQL-based business analytics, and predicts future sales using a Linear Regression model through an interactive Streamlit dashboard.
 
 ---
@@ -64,12 +65,46 @@ The next phase of this project will include:
 - 💬 Natural Language Query Interface
 - 📈 AI-powered Business Insights
 - ☁️ Cloud Deployment
+=======
+## 📌 Project Overview
+
+This project is an end-to-end Data Analytics and Machine Learning project developed using the Sample Superstore dataset.
+
+The project analyzes sales performance, identifies business insights, and predicts future sales revenue using Machine Learning.
+
+---
+
+## 🎯 Objectives
+
+- Load and understand the dataset
+- Clean and preprocess the data
+- Perform Exploratory Data Analysis (EDA)
+- Build Machine Learning models
+- Predict future sales revenue
+- Visualize business insights
+- Develop a Streamlit web application
+- Host the project online
+
+---
+
+## 🛠️ Tech Stack
+
+- Python
+- Pandas
+- NumPy
+- Matplotlib
+- Scikit-learn
+- SQL
+- Git & GitHub
+- Streamlit
+>>>>>>> 3041839f9481125e515bb6ea55e55ee04d2b2071
 
 ---
 
 ## 📂 Project Structure
 
 ```text
+<<<<<<< HEAD
 Smart_Sales_Analytics/
 │
 ├── data/
@@ -94,10 +129,27 @@ Smart_Sales_Analytics/
 ├── requirements.txt
 ├── .gitignore
 └── README.md
+=======
+Smart-Sales-Analytics-Revenue-Prediction/
+
+data/
+raw/
+cleaned/
+
+src/
+models/
+sql/
+images/
+
+main.py
+README.md
+requirements.txt
+>>>>>>> 3041839f9481125e515bb6ea55e55ee04d2b2071
 ```
 
 ---
 
+<<<<<<< HEAD
 ## ⚙️ Installation
 
 ### Clone the Repository
@@ -218,3 +270,31 @@ Aspiring Data Engineer | Data Analyst | Machine Learning Enthusiast | Data Scien
 ---
 
 ⭐ If you found this project useful, consider giving it a star!
+=======
+## 📅 Progress
+
+### ✅ Day 1
+
+- Project setup
+- Folder structure creation
+- Virtual environment setup
+- Installed required libraries
+- Dataset imported
+- Data loading using Pandas
+- Displayed dataset information
+
+---
+
+## 🚀 Upcoming Work
+
+- Data Cleaning
+- Exploratory Data Analysis
+- Data Visualization
+- SQL Analysis
+- Feature Engineering
+- Machine Learning
+- Streamlit Dashboard
+- Project Hosting
+
+---
+>>>>>>> 3041839f9481125e515bb6ea55e55ee04d2b2071
