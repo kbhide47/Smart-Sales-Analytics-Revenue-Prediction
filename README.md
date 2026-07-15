@@ -2,6 +2,9 @@
 An end-to-end Data Analytics and Machine Learning project that extracts, cleans, analyzes, and visualizes retail sales data, performs SQL-based business analytics, and predicts future sales using a Linear Regression model through an interactive Streamlit dashboard.
 
 ---
+## 🚀 Live Demo
+
+🌐 https://smart-sales-ai-dashboard.streamlit.app/
 
 ## 🚀 Features
 
