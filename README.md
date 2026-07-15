@@ -1,6 +1,4 @@
-# 📊 Smart Sales Analytics & Revenue Prediction System
-
-<<<<<<< HEAD
+# 📊 Smart Sales Analytics & Revenue Prediction System 
 An end-to-end Data Analytics and Machine Learning project that extracts, cleans, analyzes, and visualizes retail sales data, performs SQL-based business analytics, and predicts future sales using a Linear Regression model through an interactive Streamlit dashboard.
 
 ---
@@ -65,7 +63,7 @@ The next phase of this project will include:
 - 💬 Natural Language Query Interface
 - 📈 AI-powered Business Insights
 - ☁️ Cloud Deployment
-=======
+
 ## 📌 Project Overview
 
 This project is an end-to-end Data Analytics and Machine Learning project developed using the Sample Superstore dataset.
@@ -97,14 +95,14 @@ The project analyzes sales performance, identifies business insights, and predic
 - SQL
 - Git & GitHub
 - Streamlit
->>>>>>> 3041839f9481125e515bb6ea55e55ee04d2b2071
+
 
 ---
 
 ## 📂 Project Structure
 
 ```text
-<<<<<<< HEAD
+
 Smart_Sales_Analytics/
 │
 ├── data/
@@ -144,12 +142,8 @@ images/
 main.py
 README.md
 requirements.txt
->>>>>>> 3041839f9481125e515bb6ea55e55ee04d2b2071
-```
 
----
 
-<<<<<<< HEAD
 ## ⚙️ Installation
 
 ### Clone the Repository
@@ -296,5 +290,4 @@ Aspiring Data Engineer | Data Analyst | Machine Learning Enthusiast | Data Scien
 - Streamlit Dashboard
 - Project Hosting
 
----
->>>>>>> 3041839f9481125e515bb6ea55e55ee04d2b2071
+
