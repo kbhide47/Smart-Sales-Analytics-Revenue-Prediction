@@ -1,5 +1,11 @@
-# 📊 Smart Sales Analytics & Revenue Prediction System 
+# 📊 Smart Sales Analytics & Revenue Prediction System
 An end-to-end Data Analytics and Machine Learning project that extracts, cleans, analyzes, and visualizes retail sales data, performs SQL-based business analytics, and predicts future sales using a Linear Regression model through an interactive Streamlit dashboard.
+
+![Python](https://img.shields.io/badge/Python-3.11-blue?logo=python)
+![Streamlit](https://img.shields.io/badge/Streamlit-Live-red?logo=streamlit)
+![SQLite](https://img.shields.io/badge/SQLite-Database-blue?logo=sqlite)
+![Machine Learning](https://img.shields.io/badge/Machine%20Learning-Scikit--Learn-orange)
+![License](https://img.shields.io/badge/License-MIT-green)
 
 ---
 ## 🚀 Live Demo
@@ -19,7 +25,6 @@ An end-to-end Data Analytics and Machine Learning project that extracts, cleans,
 - 🗄️ SQL (SQLite) Integration
 - 📋 SQL Analytics Queries
 - 🤖 Machine Learning Sales Prediction
-- 💾 Model Saving using Joblib
 - 🎛️ Interactive Filters
 - 📅 Monthly Sales Trend Analysis
 
@@ -69,23 +74,27 @@ The next phase of this project will include:
 
 ## 📌 Project Overview
 
-This project is an end-to-end Data Analytics and Machine Learning project developed using the Sample Superstore dataset.
+Smart Sales Analytics & Revenue Prediction System is an end-to-end Data Analytics and Machine Learning project built using Python, SQL, SQLite, Streamlit, and Scikit-learn.
 
-The project analyzes sales performance, identifies business insights, and predicts future sales revenue using Machine Learning.
+The application enables businesses to analyze historical retail sales, visualize KPIs, generate business insights, and predict future sales using Machine Learning.
 
 ---
 
-## 🎯 Objectives
+## 🎯 Skills Demonstrated
 
-- Load and understand the dataset
-- Clean and preprocess the data
-- Perform Exploratory Data Analysis (EDA)
-- Build Machine Learning models
-- Predict future sales revenue
-- Visualize business insights
-- Develop a Streamlit web application
-- Host the project online
-
+- Python
+- SQL
+- SQLite
+- Pandas
+- NumPy
+- Data Cleaning
+- Exploratory Data Analysis
+- Data Visualization
+- Machine Learning
+- Feature Engineering
+- Streamlit
+- Git
+- GitHub
 ---
 
 ## 🛠️ Tech Stack
