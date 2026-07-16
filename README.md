@@ -1,6 +1,12 @@
 # 📊 Smart Sales Analytics & Revenue Prediction System 
 An end-to-end Data Analytics and Machine Learning project that extracts, cleans, analyzes, and visualizes retail sales data, performs SQL-based business analytics, and predicts future sales using a Linear Regression model through an interactive Streamlit dashboard.
 
+![Python](https://img.shields.io/badge/Python-3.11-blue?logo=python)
+![Streamlit](https://img.shields.io/badge/Streamlit-Deployed-red?logo=streamlit)
+![SQLite](https://img.shields.io/badge/SQLite-Database-blue?logo=sqlite)
+![Machine Learning](https://img.shields.io/badge/Machine%20Learning-Scikit--Learn-orange)
+![License](https://img.shields.io/badge/License-MIT-green)
+
 ---
 ## 🚀 Live Demo
 
