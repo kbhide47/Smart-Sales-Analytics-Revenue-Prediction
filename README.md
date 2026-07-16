@@ -4,6 +4,12 @@ An end-to-end **AI-powered Sales Analytics Platform** built using **Python, SQL,
 
 The application enables businesses to analyze sales performance, predict future revenue using Machine Learning, and interact with their sales data through an intelligent Retrieval-Augmented Generation (RAG) chatbot.
 
+![Python](https://img.shields.io/badge/Python-3.11-blue?logo=python)
+![Streamlit](https://img.shields.io/badge/Streamlit-Deployed-red?logo=streamlit)
+![SQLite](https://img.shields.io/badge/SQLite-Database-blue?logo=sqlite)
+![Machine Learning](https://img.shields.io/badge/Machine%20Learning-Scikit--Learn-orange)
+![License](https://img.shields.io/badge/License-MIT-green)
+
 ---
 
 ![Python](https://img.shields.io/badge/Python-3.14-blue?logo=python)
