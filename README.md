@@ -1,282 +1,335 @@
-# 📊 Smart Sales Analytics & Revenue Prediction System
-An end-to-end Data Analytics and Machine Learning project that extracts, cleans, analyzes, and visualizes retail sales data, performs SQL-based business analytics, and predicts future sales using a Linear Regression model through an interactive Streamlit dashboard.
+# 📊 Smart Sales Analytics & AI Revenue Prediction Platform
 
-![Python](https://img.shields.io/badge/Python-3.11-blue?logo=python)
-![Streamlit](https://img.shields.io/badge/Streamlit-Live-red?logo=streamlit)
-![SQLite](https://img.shields.io/badge/SQLite-Database-blue?logo=sqlite)
-![Machine Learning](https://img.shields.io/badge/Machine%20Learning-Scikit--Learn-orange)
-![License](https://img.shields.io/badge/License-MIT-green)
+An end-to-end **AI-powered Sales Analytics Platform** built using **Python, SQL, Machine Learning, Streamlit, LangChain, FAISS, Hugging Face Embeddings, and OpenRouter**.
 
----
-## 🚀 Live Demo
-
-🌐 https://smart-sales-ai-dashboard.streamlit.app/
-
-## 🚀 Features
-
-- 📂 Data Extraction
-- 🧹 Data Cleaning & Preprocessing
-- 📊 Exploratory Data Analysis (EDA)
-- 📈 Interactive Streamlit Dashboard
-- 📉 Sales & Profit Visualization
-- 🌍 Region-wise Analysis
-- 🛍️ Category & Sub-Category Analysis
-- 🏆 KPI Dashboard
-- 🗄️ SQL (SQLite) Integration
-- 📋 SQL Analytics Queries
-- 🤖 Machine Learning Sales Prediction
-- 🎛️ Interactive Filters
-- 📅 Monthly Sales Trend Analysis
+The application enables businesses to analyze sales performance, predict future revenue using Machine Learning, and interact with their sales data through an intelligent Retrieval-Augmented Generation (RAG) chatbot.
 
 ---
 
-## 🛠️ Technologies Used
+# 🚀 Project Overview
 
-### Programming Language
+This project combines **Business Intelligence**, **Machine Learning**, and **Generative AI** into one platform.
+
+Users can:
+
+- Analyze historical sales data
+- Visualize KPIs and business trends
+- Predict future sales
+- Ask business questions using an AI chatbot
+- Receive AI-generated business recommendations
+- Understand prediction reasoning with Explainable AI
+
+---
+
+# ✨ Features
+
+## 📈 Interactive Dashboard
+
+- KPI Cards
+- Region-wise Sales
+- Category-wise Sales
+- Profit Analysis
+- Interactive Plotly Charts
+- Dashboard Filters
+
+---
+
+## 🤖 AI Business Assistant (RAG)
+
+- Retrieval-Augmented Generation (RAG)
+- FAISS Vector Database
+- LangChain Retrieval Pipeline
+- Hugging Face Embeddings
+- OpenRouter LLM
+- Chat History
+- Business Knowledge Search
+- Displays Retrieved Knowledge Sources
+
+Example Questions:
+
+- Which region has the highest sales?
+- Which category generated the highest profit?
+- Suggest ways to improve profit.
+- Which customer segment performs best?
+
+---
+
+## 💰 Machine Learning
+
+- Sales Prediction Model
+- One-Hot Encoding
+- Linear Regression
+- Explain Prediction Feature
+- AI-generated Recommendation after Prediction
+
+---
+
+## 💡 AI Recommendation Engine
+
+Automatically generates recommendations such as:
+
+- Improve inventory allocation
+- Reduce unnecessary discounts
+- Focus marketing on profitable regions
+- Increase sales in high-performing categories
+
+---
+
+# 🛠 Tech Stack
+
+## Programming
+
 - Python
 
-### Python Libraries
-- Pandas
+## Database
+
+- SQLite
+- SQL
+
+## Machine Learning
+
+- Scikit-learn
 - NumPy
+- Pandas
+
+## Data Visualization
+
 - Plotly
 - Streamlit
-- Scikit-learn
-- Joblib
-- SQLite3
-- Pathlib
 
-### Machine Learning
-- Linear Regression
+## AI / LLM
 
-### Data Analysis
-- Data Cleaning
-- Exploratory Data Analysis (EDA)
-- Feature Engineering
-
-### Database
-- SQLite
-- SQL
+- LangChain
+- FAISS
+- Hugging Face Embeddings
+- Sentence Transformers
+- OpenRouter API
 
 ---
 
-## 🚀 Future Enhancements
-
-The next phase of this project will include:
-
-- 🤖 AI Sales Assistant
-- 📄 RAG (Retrieval-Augmented Generation)
-- 🧠 LangChain
-- 💎 Google Gemini API
-- 🗂️ FAISS Vector Database
-- 💬 Natural Language Query Interface
-- 📈 AI-powered Business Insights
-- ☁️ Cloud Deployment
-
-## 📌 Project Overview
-
-Smart Sales Analytics & Revenue Prediction System is an end-to-end Data Analytics and Machine Learning project built using Python, SQL, SQLite, Streamlit, and Scikit-learn.
-
-The application enables businesses to analyze historical retail sales, visualize KPIs, generate business insights, and predict future sales using Machine Learning.
-
----
-
-## 🎯 Skills Demonstrated
-
-- Python
-- SQL
-- SQLite
-- Pandas
-- NumPy
-- Data Cleaning
-- Exploratory Data Analysis
-- Data Visualization
-- Machine Learning
-- Feature Engineering
-- Streamlit
-- Git
-- GitHub
----
-
-## 🛠️ Tech Stack
-
-- Python
-- Pandas
-- NumPy
-- Matplotlib
-- Scikit-learn
-- SQL
-- Git & GitHub
-- Streamlit
-
-
----
-
-## 📂 Project Structure
+# 📂 Folder Structure
 
 ```text
-
-Smart_Sales_Analytics/
+PROJECT_Smart-Sales-Analytics-Revenue-Prediction
 │
+├── assets/
 ├── data/
 │   ├── raw/
-│   └── cleaned/
-│       └── cleaned_superstore.csv
+│   ├── cleaned/
+│   ├── documents/
+│   └── vectorstore/
 │
+├── images/
 ├── models/
 │   ├── best_model.pkl
 │   └── onehot_encoder.pkl
 │
+├── sql/
 ├── src/
 │   ├── app.py
-│   ├── database.py
-│   ├── cleaning.py
-│   ├── data_loading.py
+│   ├── ai_helper.py
+│   ├── rag.py
+│   ├── build_vector_db.py
+│   ├── prepare_documents.py
+│   ├── model.py
 │   ├── eda.py
-│   └── model.py
+│   ├── cleaning.py
+│   ├── database.py
+│   └── data_loading.py
 │
 ├── create_database.py
-├── superstore.db
 ├── requirements.txt
-├── .gitignore
-└── README.md
-=======
-Smart-Sales-Analytics-Revenue-Prediction/
-
-data/
-raw/
-cleaned/
-
-src/
-models/
-sql/
-images/
-
-main.py
-README.md
-requirements.txt
-
-
-## ⚙️ Installation
-
-### Clone the Repository
-
-```bash
-git clone <your-github-repository-link>
+├── README.md
+└── superstore.db
 ```
 
-### Navigate to Project Folder
+---
+
+# ⚙ Installation
+
+Clone the repository
 
 ```bash
-cd Smart_Sales_Analytics
+git clone <YOUR_GITHUB_REPOSITORY_LINK>
 ```
 
-### Install Required Libraries
+Move into the project
+
+```bash
+cd PROJECT_Smart-Sales-Analytics-Revenue-Prediction
+```
+
+Create virtual environment
+
+```bash
+python -m venv venv
+```
+
+Activate environment
+
+### Windows
+
+```bash
+venv\Scripts\activate
+```
+
+Install dependencies
 
 ```bash
 pip install -r requirements.txt
 ```
 
-### Create SQLite Database
+Create the vector database
 
 ```bash
-python create_database.py
+python src/build_vector_db.py
 ```
 
-### Run the Streamlit Dashboard
+Run the application
 
 ```bash
 streamlit run src/app.py
 ```
+
 ---
 
-## 🔄 Project Workflow
+# 📷 Screenshots
 
-```text
-Raw Dataset (CSV)
-        │
-        ▼
-Data Cleaning & Preprocessing
-        │
-        ▼
-Exploratory Data Analysis (EDA)
-        │
-        ▼
-SQLite Database
-        │
-        ▼
-SQL Queries & Analytics
-        │
-        ▼
-Interactive Streamlit Dashboard
-        │
-        ▼
-Machine Learning Model
-(Linear Regression)
-        │
-        ▼
-Sales Prediction
+## Dashboard
+
+_Add dashboard screenshot here_
+
+---
+
+## Sales Prediction
+
+_Add prediction screenshot here_
+
+---
+
+## AI Business Assistant
+
+_Add chatbot screenshot here_
+
+---
+
+## AI Recommendation
+
+_Add recommendation screenshot here_
+
+---
+
+# 🔥 Example AI Questions
+
+```
+Which region has the highest sales?
+
+Which category generated the highest profit?
+
+Suggest strategies to improve revenue.
+
+How can profit be increased?
+
+Which customer segment contributes the most sales?
 ```
 
 ---
 
-# 📸 Dashboard Preview
+# 📊 Machine Learning Workflow
 
-## 🏠 Home Dashboard
+```
+Raw Dataset
 
-![Home Dashboard](assets/screenshots/dashboard_home.png)
+↓
+
+Data Cleaning
+
+↓
+
+EDA
+
+↓
+
+Feature Engineering
+
+↓
+
+Model Training
+
+↓
+
+Sales Prediction
+
+↓
+
+Explain Prediction
+
+↓
+
+AI Recommendation
+```
 
 ---
 
-## 📊 Charts & Analytics
+# 🤖 RAG Workflow
 
-![Charts](assets/screenshots/charts.png)
+```
+Business Knowledge
+
+↓
+
+Document Loader
+
+↓
+
+Text Splitter
+
+↓
+
+Sentence Transformers
+
+↓
+
+FAISS Vector Database
+
+↓
+
+LangChain Retriever
+
+↓
+
+OpenRouter LLM
+
+↓
+
+Business Answer
+```
 
 ---
 
-## 🤖 Sales Prediction
+# 📌 Future Improvements
 
-![Prediction](assets/screenshots/sales_prediction.png)
-
----
-
-## 🗄️ SQL Analytics
-
-![SQL](assets/screenshots/sql_analytics.png)
-
----
-
-# 📈 Results
-
-- Successfully cleaned and preprocessed the retail sales dataset.
-- Performed Exploratory Data Analysis (EDA) to identify sales and profit trends.
-- Built an interactive Streamlit dashboard with filters and KPI cards.
-- Integrated SQLite database for SQL-based business analytics.
-- Developed a Linear Regression model for sales prediction.
-- Saved the trained model and encoder using Joblib for future predictions.
+- Deploy on Streamlit Cloud
+- Authentication System
+- Voice-enabled AI Assistant
+- Sales Forecasting using Time Series Models
+- PDF Report Generation
+- Multi-language Support
+- Real-time Database Integration
+- Interactive Executive Dashboard
 
 ---
 
-# 👩‍💻 Author
+# 👩‍💻 Developer
 
 **Kasturi Bhide**
 
-Electronics & Telecommunication Engineering Student  
-Aspiring Data Engineer | Data Analyst | Machine Learning Enthusiast | Data Scientist Role
+Electronics & Telecommunication Engineering
+
+Python | SQL | Machine Learning | Data Analytics | Generative AI | RAG
 
 ---
 
-## 📬 Contact
-
-- 📧 Email: kbhide47@gmail.com
-
-- 💼 LinkedIn : https://www.linkedin.com/in/kasturi-bhide-78334035a/
-
-- 🐙 GitHub: https://github.com/kbhide47
-
----
-
-⭐ If you found this project useful, consider giving it a star!
-=======
-
+# ⭐ If you found this project useful, consider giving it a Star.
 
 
