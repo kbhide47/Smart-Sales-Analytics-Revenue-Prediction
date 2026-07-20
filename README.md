@@ -12,14 +12,6 @@ The application enables businesses to analyze sales performance, predict future 
 
 ---
 
-![Python](https://img.shields.io/badge/Python-3.14-blue?logo=python)
-![Streamlit](https://img.shields.io/badge/Streamlit-Dashboard-red?logo=streamlit)
-![Machine Learning](https://img.shields.io/badge/Machine-Learning-green)
-![SQL](https://img.shields.io/badge/SQLite-Database-blue?logo=sqlite)
-![LangChain](https://img.shields.io/badge/LangChain-RAG-orange)
-![FAISS](https://img.shields.io/badge/FAISS-VectorDB-purple)
-![OpenRouter](https://img.shields.io/badge/OpenRouter-LLM-black)
-
 # 🚀 Project Overview
 
 This project combines **Business Intelligence**, **Machine Learning**, and **Generative AI** into one platform.
