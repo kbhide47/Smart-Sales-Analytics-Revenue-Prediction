@@ -1,51 +1,57 @@
+import os
+
 from langchain_community.document_loaders import TextLoader
 from langchain_text_splitters import RecursiveCharacterTextSplitter
 from langchain_community.vectorstores import FAISS
 from langchain_community.embeddings import HuggingFaceEmbeddings
 
-print("Loading Business Knowledge...")
 
-import os
+def build_vector_database():
 
-documents = []
+    print("Loading Business Knowledge...")
 
-folder = "data/documents"
+    documents = []
 
-for file in os.listdir(folder):
+    folder = "data/documents"
 
-    if file.endswith(".txt"):
+    for file in os.listdir(folder):
 
-        loader = TextLoader(
-            os.path.join(folder, file),
-            encoding="utf-8"
-        )
+        if file.endswith(".txt"):
 
-        documents.extend(loader.load())
+            loader = TextLoader(
+                os.path.join(folder, file),
+                encoding="utf-8"
+            )
 
-print(f"Loaded {len(documents)} document(s)")
+            documents.extend(loader.load())
 
-text_splitter = RecursiveCharacterTextSplitter(
-    chunk_size=500,
-    chunk_overlap=100
-)
+    print(f"Loaded {len(documents)} document(s)")
 
-docs = text_splitter.split_documents(documents)
+    text_splitter = RecursiveCharacterTextSplitter(
+        chunk_size=500,
+        chunk_overlap=100
+    )
 
-print(f"Created {len(docs)} chunks")
+    docs = text_splitter.split_documents(documents)
 
-print("Loading Embedding Model...")
+    print(f"Created {len(docs)} chunks")
 
-embeddings = HuggingFaceEmbeddings(
-    model_name="sentence-transformers/all-MiniLM-L6-v2"
-)
+    embeddings = HuggingFaceEmbeddings(
+        model_name="sentence-transformers/all-MiniLM-L6-v2"
+    )
 
-print("Creating FAISS Vector Database...")
+    print("Creating FAISS Vector Database...")
 
-vector_db = FAISS.from_documents(
-    docs,
-    embeddings
-)
+    vector_db = FAISS.from_documents(
+        docs,
+        embeddings
+    )
 
-vector_db.save_local("data/vectorstore")
+    vector_db.save_local("data/vectorstore")
 
-print("✅ FAISS Database Created Successfully!")
+    print("✅ FAISS Database Created Successfully!")
+
+
+if __name__ == "__main__":
+
+    build_vector_database()

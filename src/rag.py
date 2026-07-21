@@ -3,14 +3,24 @@ from langchain_community.embeddings import HuggingFaceEmbeddings
 
 from ai_helper import ask_ai
 
+import os
+
 print("Loading Vector Database...")
 
 embeddings = HuggingFaceEmbeddings(
     model_name="sentence-transformers/all-MiniLM-L6-v2"
 )
 
+VECTOR_DB_PATH = "data/vectorstore"
+
+if not os.path.exists(VECTOR_DB_PATH):
+
+    from build_vector_db import build_vector_database
+
+    build_vector_database()
+
 db = FAISS.load_local(
-    "data/vectorstore",
+    VECTOR_DB_PATH,
     embeddings,
     allow_dangerous_deserialization=True
 )
