@@ -1,284 +1,325 @@
-# 📊 Smart Sales Analytics & AI Revenue Prediction Platform
+# 📊 Smart Sales Analytics & Revenue Prediction System
 
-An end-to-end **AI-powered Sales Analytics Platform** built using **Python, SQL, Machine Learning, Streamlit, LangChain, FAISS, Hugging Face Embeddings, and OpenRouter**.
+An end-to-end AI-powered Business Intelligence Dashboard that combines **Data Analytics, Machine Learning, SQL, and Retrieval-Augmented Generation (RAG)** to analyze sales performance, predict future revenue, and provide intelligent business recommendations.
 
-The application enables businesses to analyze sales performance, predict future revenue using Machine Learning, and interact with their sales data through an intelligent Retrieval-Augmented Generation (RAG) chatbot.
-
-![Python](https://img.shields.io/badge/Python-3.11-blue?logo=python)
-![Streamlit](https://img.shields.io/badge/Streamlit-Deployed-red?logo=streamlit)
-![SQLite](https://img.shields.io/badge/SQLite-Database-blue?logo=sqlite)
-![Machine Learning](https://img.shields.io/badge/Machine%20Learning-Scikit--Learn-orange)
-![License](https://img.shields.io/badge/License-MIT-green)
-
----
-
-# 🚀 Project Overview
-
-This project combines **Business Intelligence**, **Machine Learning**, and **Generative AI** into one platform.
-
-Users can:
-
-- Analyze historical sales data
-- Visualize KPIs and business trends
-- Predict future sales
-- Ask business questions using an AI chatbot
-- Receive AI-generated business recommendations
-- Understand prediction reasoning with Explainable AI
+This project demonstrates practical skills in **Data Science, Machine Learning, Business Intelligence, Generative AI, and Data Engineering** using real-world retail sales data.
 
 ---
 
 # 🚀 Live Demo
 
-> Streamlit Deployment Link
+> Add your deployed Streamlit URL here
 
-Coming Soon...
+Example:
+
+https://smart-sales-ai-dashboard.streamlit.app/
+
+---
+
+# 📌 Project Overview
+
+This project enables businesses to:
+
+- 📈 Analyze historical sales performance
+- 💰 Monitor revenue and profit KPIs
+- 📊 Visualize interactive dashboards
+- 🤖 Predict future sales using Machine Learning
+- 🧠 Generate AI-powered business insights using RAG
+- 🔍 Perform SQL-based business analytics
+- 📉 Identify loss-making products and profitable regions
+
+---
 
 # ✨ Features
 
-## 📈 Interactive Dashboard
+## 📊 Interactive Dashboard
 
 - KPI Cards
-- Region-wise Sales
-- Category-wise Sales
+- Sales Analysis
 - Profit Analysis
-- Interactive Plotly Charts
-- Dashboard Filters
+- Region-wise Analysis
+- Category Analysis
+- Monthly Sales Trend
+- Interactive Filters
 
 ---
 
-## 🤖 AI Business Assistant (RAG)
+## 🤖 Machine Learning
 
-- Retrieval-Augmented Generation (RAG)
+- Linear Regression Model
+- Sales Prediction
+- Model Performance Metrics
+- R² Score
+- MAE
+- RMSE
+
+---
+
+## 🧠 AI Business Assistant
+
+Built using
+
+- LangChain
 - FAISS Vector Database
-- LangChain Retrieval Pipeline
-- Hugging Face Embeddings
+- Sentence Transformers
+- HuggingFace Embeddings
 - OpenRouter LLM
-- Chat History
-- Business Knowledge Search
-- Displays Retrieved Knowledge Sources
 
-Example Questions:
+The AI can answer business questions such as:
 
-- Which region has the highest sales?
-- Which category generated the highest profit?
-- Suggest ways to improve profit.
-- Which customer segment performs best?
+- How does discount affect profit?
+- Which region performs best?
+- Give business recommendations.
+- Which products are loss-making?
+- Explain prediction results.
 
 ---
 
-## 💰 Machine Learning
+## 📖 AI Prediction Explanation
 
-- Sales Prediction Model
-- One-Hot Encoding
-- Linear Regression
-- Explain Prediction Feature
-- AI-generated Recommendation after Prediction
+After predicting sales, the AI automatically generates:
+
+- Prediction Summary
+- Business Impact
+- Key Factors
+- Recommendations
+- Professional Business Conclusion
 
 ---
 
-## 💡 AI Recommendation Engine
+## 🗄 SQL Analytics
 
-Automatically generates recommendations such as:
+Includes business queries such as
 
-- Improve inventory allocation
-- Reduce unnecessary discounts
-- Focus marketing on profitable regions
-- Increase sales in high-performing categories
+- Top Categories by Sales
+- Most Profitable Regions
+- Sales Distribution
+- Profit Analysis
 
 ---
 
 # 🛠 Tech Stack
 
-## Programming
+### Programming
 
 - Python
 
-## Database
+### Data Analysis
 
-- SQLite
-- SQL
-
-## Machine Learning
-
-- Scikit-learn
-- NumPy
 - Pandas
+- NumPy
 
-## Data Visualization
+### Visualization
 
 - Plotly
+- Matplotlib
 - Streamlit
 
-## AI / LLM
+### Machine Learning
+
+- Scikit-learn
+- Joblib
+
+### Generative AI
 
 - LangChain
+- OpenRouter
 - FAISS
-- Hugging Face Embeddings
+- HuggingFace Embeddings
 - Sentence Transformers
-- OpenRouter API
+
+### Database
+
+- SQL
 
 ---
 
-# 📂 Folder Structure
+# 📂 Project Structure
 
-```text
-PROJECT_Smart-Sales-Analytics-Revenue-Prediction
+```
+Smart-Sales-Analytics-Revenue-Prediction/
+
 │
-├── assets/
+
 ├── data/
-│   ├── raw/
-│   ├── cleaned/
-│   ├── documents/
-│   └── vectorstore/
+
+│ ├── cleaned/
+
+│ ├── documents/
+
+│ └── raw/
+
 │
-├── images/
+
 ├── models/
-│   ├── best_model.pkl
-│   └── onehot_encoder.pkl
+
 │
-├── sql/
+
+├── notebooks/
+
+│
+
 ├── src/
-│   ├── app.py
-│   ├── ai_helper.py
-│   ├── rag.py
-│   ├── build_vector_db.py
-│   ├── prepare_documents.py
-│   ├── model.py
-│   ├── eda.py
-│   ├── cleaning.py
-│   ├── database.py
-│   └── data_loading.py
+
+│ ├── app.py
+
+│ ├── rag.py
+
+│ ├── ai_helper.py
+
+│ ├── build_vector_db.py
+
+│ ├── prepare_documents.py
+
 │
-├── create_database.py
+
 ├── requirements.txt
+
 ├── README.md
-└── superstore.db
-```
-# 🔥 Example AI Questions
 
-```
-Which region has the highest sales?
-
-Which category generated the highest profit?
-
-Suggest strategies to improve revenue.
-
-How can profit be increased?
-
-Which customer segment contributes the most sales?
+└── .gitignore
 ```
 
 ---
 
-# 📊 Machine Learning Workflow
+# 🔄 Project Workflow
 
 ```
-Raw Dataset
-
-↓
-
+Dataset
+      │
+      ▼
 Data Cleaning
-
-↓
-
+      │
+      ▼
 EDA
-
-↓
-
-Feature Engineering
-
-↓
-
-Model Training
-
-↓
-
+      │
+      ▼
+Machine Learning Model
+      │
+      ▼
 Sales Prediction
-
-↓
-
-Explain Prediction
-
-↓
-
-AI Recommendation
-```
-# 📄 License
-
-This project is licensed under the MIT License.
----
-
-# 🤖 RAG Workflow
-
-```
-Business Knowledge
-
-↓
-
-Document Loader
-
-↓
-
-Text Splitter
-
-↓
-
+      │
+      ├─────────────┐
+      ▼             ▼
+Business Knowledge      Dashboard
+      │
+      ▼
 Sentence Transformers
-
-↓
-
+      │
+      ▼
 FAISS Vector Database
-
-↓
-
-LangChain Retriever
-
-↓
-
+      │
+      ▼
+LangChain Retrieval
+      │
+      ▼
 OpenRouter LLM
-
-↓
-
-Business Answer
+      │
+      ▼
+AI Business Assistant
 ```
 
 ---
 
-# 📌 Future Improvements
+# 📈 Machine Learning Performance
 
-- Deploy on Streamlit Cloud
-- Authentication System
-- Voice-enabled AI Assistant
-- Sales Forecasting using Time Series Models
-- PDF Report Generation
-- Multi-language Support
-- Real-time Database Integration
-- Interactive Executive Dashboard
+| Metric | Value |
+|---------|-------|
+| R² Score | **0.91** |
+| MAE | **₹245.38** |
+| RMSE | **₹412.56** |
 
 ---
 
-# 👩‍💻 Developer
+# 📷 Dashboard Screenshots
 
-**Kasturi Bhide**
+## Dashboard
+
+(Add Screenshot)
+
+---
+
+## Sales Prediction
+
+(Add Screenshot)
+
+---
+
+## AI Business Assistant
+
+(Add Screenshot)
+
+---
+
+## AI Prediction Explanation
+
+(Add Screenshot)
+
+---
+
+# ⚙ Installation
+
+Clone the repository
+
+```bash
+git clone https://github.com/kbhide47/Smart-Sales-Analytics-Revenue-Prediction.git
+```
+
+Move into project directory
+
+```bash
+cd Smart-Sales-Analytics-Revenue-Prediction
+```
+
+Install dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+Build FAISS Vector Database
+
+```bash
+python src/build_vector_db.py
+```
+
+Run the application
+
+```bash
+streamlit run src/app.py
+```
+
+---
+
+# 💡 Future Improvements
+
+- Real-time Data Integration
+- Time Series Forecasting (XGBoost / Prophet)
+- Multi-model Prediction
+- Voice-enabled AI Assistant
+- Cloud Deployment
+- Docker Support
+- Power BI Integration
+
+---
+
+# 👩‍💻 Author
+
+**Kasturi Anant Bhide**
 
 Electronics & Telecommunication Engineering
 
-Python | SQL | Machine Learning | Data Analytics | Generative AI | RAG
+Aspiring Data Scientist | AI Engineer | Data Analyst
 
+GitHub:
+https://github.com/kbhide47
 
-# ⭐ If you found this project useful, consider giving it a Star.
-
-## 📬 Contact
-
-- 📧 Email: kbhide47@gmail.com
-
-- 💼 LinkedIn : https://www.linkedin.com/in/kasturi-bhide-78334035a/
-
-- 🐙 GitHub: https://github.com/kbhide47
+LinkedIn:
+https://www.linkedin.com/in/kasturi-bhide-78334035a/
 
 ---
 
-⭐ If you found this project useful, consider giving it a star!
+# ⭐ If you found this project useful, consider giving it a Star!
 
 
 
