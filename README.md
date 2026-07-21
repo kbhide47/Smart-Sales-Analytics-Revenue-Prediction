@@ -1,63 +1,44 @@
 # 📊 Smart Sales Analytics & Revenue Prediction System
 
-An end-to-end AI-powered Business Intelligence Dashboard that combines **Data Analytics, Machine Learning, SQL, and Retrieval-Augmented Generation (RAG)** to analyze sales performance, predict future revenue, and provide intelligent business recommendations.
+An AI-powered Business Intelligence Dashboard that combines **Data Analytics, Machine Learning, SQL, and Retrieval-Augmented Generation (RAG)** to analyze business performance, predict future sales, and provide intelligent business recommendations.
 
-This project demonstrates practical skills in **Data Science, Machine Learning, Business Intelligence, Generative AI, and Data Engineering** using real-world retail sales data.
-
----
-
-# 🚀 Live Demo
-
-> Add your deployed Streamlit URL here
-
-Example:
-
-https://smart-sales-ai-dashboard.streamlit.app/
+> 🚀 Built using Python, Streamlit, Scikit-learn, LangChain, FAISS, Plotly, SQL, and OpenRouter LLM.
 
 ---
 
-# 📌 Project Overview
+## 🌐 Live Demo
 
-This project enables businesses to:
-
-- 📈 Analyze historical sales performance
-- 💰 Monitor revenue and profit KPIs
-- 📊 Visualize interactive dashboards
-- 🤖 Predict future sales using Machine Learning
-- 🧠 Generate AI-powered business insights using RAG
-- 🔍 Perform SQL-based business analytics
-- 📉 Identify loss-making products and profitable regions
+🔗 **Streamlit App:**  
+> https://smart-business-insights.streamlit.app/
 
 ---
 
-# ✨ Features
+# 🚀 Features
 
-## 📊 Interactive Dashboard
-
-- KPI Cards
-- Sales Analysis
-- Profit Analysis
-- Region-wise Analysis
-- Category Analysis
+### 📈 Interactive Dashboard
+- KPI Cards (Sales, Profit, Orders)
+- Region-wise Sales Analysis
+- Category-wise Sales Analysis
 - Monthly Sales Trend
+- Profit Analysis
+- Sales Distribution
 - Interactive Filters
 
 ---
 
-## 🤖 Machine Learning
-
+### 🤖 Machine Learning
 - Linear Regression Model
 - Sales Prediction
-- Model Performance Metrics
+- Model Performance Evaluation
 - R² Score
 - MAE
 - RMSE
 
 ---
 
-## 🧠 AI Business Assistant
+### 🧠 AI Business Assistant (RAG)
 
-Built using
+Built using:
 
 - LangChain
 - FAISS Vector Database
@@ -65,71 +46,66 @@ Built using
 - HuggingFace Embeddings
 - OpenRouter LLM
 
-The AI can answer business questions such as:
+The assistant can answer questions like:
 
 - How does discount affect profit?
-- Which region performs best?
+- Which region performs the best?
 - Give business recommendations.
-- Which products are loss-making?
-- Explain prediction results.
+- Which products generate losses?
+- Which category has the highest sales?
 
 ---
 
-## 📖 AI Prediction Explanation
+### 📖 AI Prediction Explanation
 
-After predicting sales, the AI automatically generates:
+After every prediction, AI automatically generates:
 
-- Prediction Summary
-- Business Impact
-- Key Factors
-- Recommendations
-- Professional Business Conclusion
+- 📊 Prediction Summary
+- 🔍 Key Factors
+- 📈 Business Impact
+- 💡 Recommendations
+- ✅ Professional Conclusion
 
 ---
 
-## 🗄 SQL Analytics
+### 🗄 SQL Analytics
 
-Includes business queries such as
+Business Insights include:
 
 - Top Categories by Sales
-- Most Profitable Regions
+- Most Profitable Region
 - Sales Distribution
 - Profit Analysis
+- Product Performance
 
 ---
 
 # 🛠 Tech Stack
 
 ### Programming
-
 - Python
 
 ### Data Analysis
-
 - Pandas
 - NumPy
 
 ### Visualization
-
 - Plotly
 - Matplotlib
 - Streamlit
 
 ### Machine Learning
-
 - Scikit-learn
 - Joblib
 
-### Generative AI
-
+### AI / Generative AI
 - LangChain
-- OpenRouter
 - FAISS
 - HuggingFace Embeddings
 - Sentence Transformers
+- OpenRouter LLM
 
 ### Database
-
 - SQL
 
 ---
@@ -140,43 +116,24 @@ Includes business queries such as
 Smart-Sales-Analytics-Revenue-Prediction/
 
 │
-
 ├── data/
-
-│ ├── cleaned/
-
-│ ├── documents/
-
-│ └── raw/
-
+│   ├── raw/
+│   ├── cleaned/
+│   ├── documents/
 │
-
 ├── models/
-
 │
-
 ├── notebooks/
-
 │
-
 ├── src/
-
-│ ├── app.py
-
-│ ├── rag.py
-
-│ ├── ai_helper.py
-
-│ ├── build_vector_db.py
-
-│ ├── prepare_documents.py
-
+│   ├── app.py
+│   ├── rag.py
+│   ├── ai_helper.py
+│   ├── prepare_documents.py
+│   ├── build_vector_db.py
 │
-
 ├── requirements.txt
-
 ├── README.md
-
 └── .gitignore
 ```
 
@@ -184,77 +141,74 @@ Smart-Sales-Analytics-Revenue-Prediction/
 
 # 🔄 Project Workflow
 
-```
-Dataset
-      │
-      ▼
-Data Cleaning
-      │
-      ▼
-EDA
-      │
-      ▼
+```text
+Retail Sales Dataset
+          │
+          ▼
+Data Cleaning & Preprocessing
+          │
+          ▼
+Exploratory Data Analysis
+          │
+          ▼
 Machine Learning Model
-      │
-      ▼
+          │
+          ▼
 Sales Prediction
-      │
-      ├─────────────┐
-      ▼             ▼
+          │
+          ├──────────────┐
+          ▼              ▼
 Business Knowledge      Dashboard
-      │
-      ▼
+          │
+          ▼
 Sentence Transformers
-      │
-      ▼
+          │
+          ▼
 FAISS Vector Database
-      │
-      ▼
+          │
+          ▼
 LangChain Retrieval
-      │
-      ▼
+          │
+          ▼
 OpenRouter LLM
-      │
-      ▼
+          │
+          ▼
 AI Business Assistant
 ```
 
 ---
 
-# 📈 Machine Learning Performance
+# 📈 Model Performance
 
-| Metric | Value |
+| Metric | Score |
 |---------|-------|
-| R² Score | **0.91** |
-| MAE | **₹245.38** |
-| RMSE | **₹412.56** |
+| **R² Score** | **0.91** |
+| **MAE** | **₹245.38** |
+| **RMSE** | **₹412.56** |
 
 ---
 
-# 📷 Dashboard Screenshots
+# 📷 Dashboard Preview
 
-## Dashboard
+## 🏠 Dashboard
 
-(Add Screenshot)
-
----
-
-## Sales Prediction
-
-(Add Screenshot)
+![Dashboard](screenshots/dashboard.png)
 
 ---
 
-## AI Business Assistant
+## 📊 Sales Prediction
 
-(Add Screenshot)
-
+![Sales Prediction](screenshots/sales_prediction.png)
 ---
 
-## AI Prediction Explanation
+## 🤖 AI Business Assistant
 
-(Add Screenshot)
+![AI Business Assistant](screenshots/ai_business_assistant.png)
+---
 
+## 📖 AI Prediction Explanation
+
+![Prediction Explanation](screenshots/prediction_explanation.png)
 ---
 
 # ⚙ Installation
@@ -265,7 +219,7 @@ Clone the repository
 git clone https://github.com/kbhide47/Smart-Sales-Analytics-Revenue-Prediction.git
 ```
 
-Move into project directory
+Move into the project folder
 
 ```bash
 cd Smart-Sales-Analytics-Revenue-Prediction
@@ -277,13 +231,13 @@ Install dependencies
 pip install -r requirements.txt
 ```
 
-Build FAISS Vector Database
+Build the FAISS Vector Database
 
 ```bash
 python src/build_vector_db.py
 ```
 
-Run the application
+Run the Streamlit application
 
 ```bash
 streamlit run src/app.py
@@ -294,10 +248,10 @@ streamlit run src/app.py
 # 💡 Future Improvements
 
 - Real-time Data Integration
-- Time Series Forecasting (XGBoost / Prophet)
-- Multi-model Prediction
+- Time Series Forecasting
+- XGBoost & Random Forest Models
 - Voice-enabled AI Assistant
-- Cloud Deployment
+- Cloud Deployment (AWS/Azure/GCP)
 - Docker Support
 - Power BI Integration
 
@@ -307,20 +261,31 @@ streamlit run src/app.py
 
 **Kasturi Anant Bhide**
 
-Electronics & Telecommunication Engineering
+Electronics & Telecommunication Engineering Student
 
-Aspiring Data Scientist | AI Engineer | Data Analyst
+🎯 Aspiring Data Scientist | AI Engineer | Data Analyst
 
-GitHub:
+### GitHub
+
 https://github.com/kbhide47
 
-LinkedIn:
+### LinkedIn
+
 https://www.linkedin.com/in/kasturi-bhide-78334035a/
 
 ---
 
-# ⭐ If you found this project useful, consider giving it a Star!
+# ⭐ Support
 
+If you found this project useful, please consider giving it a **⭐ Star** on GitHub.
+
+It helps others discover the project and supports future development.
+
+---
+
+## 📬 Contact
+
+For feedback, collaboration, or project discussions, feel free to connect via **GitHub** or **LinkedIn**.
 
 
 
