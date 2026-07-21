@@ -1,0 +1,69 @@
+BUSINESS GLOSSARY
+
+Sales
+
+Revenue earned from selling products.
+
+Profit
+
+Revenue after deducting costs.
+
+Revenue
+
+Income generated from business operations.
+
+Discount
+
+Reduction applied to product price.
+
+Category
+
+Main classification of products.
+
+Sub Category
+
+Detailed classification within a category.
+
+Region
+
+Geographical business area.
+
+Segment
+
+Customer classification.
+
+Quantity
+
+Number of units purchased.
+
+Delivery Days
+
+Number of days required to deliver an order.
+
+Machine Learning
+
+Algorithms that learn from historical data.
+
+Prediction
+
+Estimated future sales.
+
+Dashboard
+
+Visual interface displaying business metrics.
+
+Business Intelligence
+
+Using data to improve decision making.
+
+KPI
+
+Key Performance Indicator.
+
+Forecasting
+
+Predicting future business performance.
+
+Inventory
+
+Stock available for sale.

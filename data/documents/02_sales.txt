@@ -1,0 +1,31 @@
+SALES ANALYTICS
+
+Sales represents the revenue generated from customer purchases.
+
+Higher sales indicate better business performance.
+
+Sales can increase due to:
+
+Higher demand
+
+Better pricing
+
+Higher quantity sold
+
+Better marketing
+
+Improved customer satisfaction
+
+Sales can decrease due to:
+
+Low customer demand
+
+High competition
+
+Seasonality
+
+Poor inventory
+
+Lower product quality
+
+Business managers should monitor sales trends monthly.

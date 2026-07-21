@@ -1,0 +1,25 @@
+SHIP MODE ANALYSIS
+
+Ship Modes include:
+
+Standard Class
+
+Second Class
+
+First Class
+
+Same Day
+
+Faster delivery improves customer satisfaction.
+
+Same Day delivery increases logistics cost.
+
+Standard Class is generally the most economical option.
+
+Businesses should optimize shipping based on customer needs.
+
+Delivery Days influence customer experience.
+
+Machine Learning uses Delivery Days as an important prediction feature.
+
+Efficient shipping improves business performance.

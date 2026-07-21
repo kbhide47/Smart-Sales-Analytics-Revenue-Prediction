@@ -3,7 +3,13 @@ import pandas as pd
 from pathlib import Path
 import plotly.express as px
 import joblib
+
+from rag import ask_rag
+from ai_helper import ask_ai
 from database import get_connection
+
+if "chat_history" not in st.session_state:
+    st.session_state.chat_history = []
 
 model = joblib.load("models/best_model.pkl")
 encoder = joblib.load("models/onehot_encoder.pkl")
@@ -449,6 +455,7 @@ with col2:
 with col3:
     st.metric("RMSE", "₹412.56")
 st.header("🔮 Sales Prediction")
+
 category = st.selectbox(
     "Category",
     df["Category"].unique()
@@ -477,6 +484,7 @@ discount = st.slider(
     value=0.0,
     step=0.05
 )
+
 segment = st.selectbox(
     "Segment",
     df["Segment"].unique()
@@ -492,22 +500,20 @@ delivery_days = st.number_input(
     min_value=1,
     value=4
 )
+
 if st.button("Predict Sales"):
 
-    input_data = pd.DataFrame(
-        {
-            "Category": [category],
-            "Sub-Category": [sub_category],
-            "Region": [region],
-            "Segment": [segment],
-            "Ship Mode": [ship_mode],
-            "Quantity": [quantity],
-            "Discount": [discount],
-            "Delivery Days": [delivery_days]
-        }
-    )
+    input_data = pd.DataFrame({
+        "Category": [category],
+        "Sub-Category": [sub_category],
+        "Region": [region],
+        "Segment": [segment],
+        "Ship Mode": [ship_mode],
+        "Quantity": [quantity],
+        "Discount": [discount],
+        "Delivery Days": [delivery_days]
+    })
 
-    # Separate categorical and numerical columns
     categorical_cols = [
         "Category",
         "Sub-Category",
@@ -522,44 +528,336 @@ if st.button("Predict Sales"):
         "Delivery Days"
     ]
 
+    encoded = encoder.transform(input_data[categorical_cols])
 
-    # One hot encode categorical data
-    encoded_data = encoder.transform(
-        input_data[categorical_cols]
-    )
-
-
-    # Convert encoded array into dataframe
     encoded_df = pd.DataFrame(
-        encoded_data,
+        encoded,
         columns=encoder.get_feature_names_out(categorical_cols)
     )
 
-
-    # Combine numerical + encoded features
     final_input = pd.concat(
         [
-            input_data[numerical_cols].reset_index(drop=True),
-            encoded_df.reset_index(drop=True)
+            encoded_df.reset_index(drop=True),
+            input_data[numerical_cols].reset_index(drop=True)
         ],
         axis=1
     )
 
-
     prediction = model.predict(final_input)
 
+    st.session_state["predicted_sales"] = prediction[0]
+if "predicted_sales" in st.session_state:
 
     st.success(
-        f"Predicted Sales: ₹ {prediction[0]:,.2f}"
+        f"Predicted Sales: ₹ {st.session_state['predicted_sales']:,.2f}"
     )
+
+else:
+
+    st.info("Click Predict Sales")
+
+if "predicted_sales" in st.session_state:
+
+    st.metric(
+        "Prediction Status",
+        "Model Prediction Completed ✅"
+    )
+
+    if st.button("✨ Explain Prediction"):
+
+        explanation_prompt = """"You are a Senior Business Intelligence Consultant.
+
+A Machine Learning model predicted Sales of ₹{st.session_state['predicted_sales']:,.2f}.
+
+Customer Details
+
+Category: {category}
+
+Sub-Category: {sub_category}
+
+Region: {region}
+
+Segment: {segment}
+
+Ship Mode: {ship_mode}
+
+Quantity: {quantity}
+
+Discount: {discount}
+
+Delivery Days: {delivery_days}
+
+Write a professional business report.
+
+Format exactly like this.
+
+# 📊 Prediction Summary
+
+...
+
+# 🔍 Why did the model predict this?
+
+...
+
+# 📈 Business Impact
+
+...
+
+# 📌 Key Factors
+
+...
+
+# 💡 Recommendations
+
+1.
+
+2.
+
+3.
+
+# ✅ Conclusion
+
+...
+
+Never mention:
+
+Machine Learning equations
+
+FAISS
+
+LangChain
+
+Retrieved documents
+
+Vector database
+
+Write professionally.
+"""
+
+        with st.spinner("🤖 AI is analyzing your business data..."):
+
+            explanation = ask_rag(explanation_prompt)
+
+        st.markdown("---")
+
+        st.subheader("📖 AI Prediction Explanation")
+
+        st.markdown(explanation)
+
+        st.success("✅ AI Business Analysis Generated Successfully")
+st.markdown("---")
+st.info(
+    "Ask questions about Sales, Profit, Regions, Products, KPIs and Business Insights."
+)
+st.header("🤖 AI Business Assistant")
+st.markdown("### 📈 Executive Business Summary")
+
+if st.button("📊 Generate Executive Summary"):
+
+    summary_prompt = f"""
+You are a Senior Business Consultant.
+
+Based on the business knowledge available,
+generate an Executive Summary.
+
+The report should contain:
+
+1. Business Overview
+
+2. Sales Performance
+
+3. Profit Performance
+
+4. Regional Performance
+
+5. Business Risks
+
+6. Top Recommendations
+
+Use professional business language.
+"""
+
+    with st.spinner("Generating Executive Summary..."):
+
+        summary = ask_rag(summary_prompt)
+
+    st.markdown(summary)
+    st.markdown("---")
+
+if st.button("💡 Generate Business Recommendations"):
+
+    recommendation_prompt = """
+Give the Top 10 Business Recommendations
+to improve sales and profit.
+
+Recommendations should include
+
+• Marketing
+
+• Inventory
+
+• Pricing
+
+• Customer Strategy
+
+• Shipping
+
+• Profit Improvement
+
+Use professional language.
+"""
+
+    with st.spinner("Generating Recommendations..."):
+
+        recommendations = ask_rag(recommendation_prompt)
+
+    st.markdown(recommendations)
+    st.markdown("---")
+
+if st.button("📊 Explain KPIs"):
+
+    kpi_prompt = """
+Explain these KPIs professionally.
+
+Sales
+
+Profit
+
+Orders
+
+Category Analysis
+
+Region Analysis
+
+Sales Trend
+
+Profit Trend
+
+Machine Learning Prediction
+
+Business Insights
+"""
+
+    with st.spinner("Explaining KPIs..."):
+
+        kpi = ask_rag(kpi_prompt)
+
+    st.markdown(kpi)
+    st.markdown("---")
+
+if st.button("📈 Generate SWOT Analysis"):
+
+    swot_prompt = """
+Generate a SWOT Analysis
+for this Sales Dashboard.
+
+Include
+
+Strengths
+
+Weaknesses
+
+Opportunities
+
+Threats
+
+Business Recommendations.
+"""
+
+    with st.spinner("Generating SWOT Analysis..."):
+
+        swot = ask_rag(swot_prompt)
+
+    st.markdown(swot)
+st.markdown("""
+Ask business questions about:
+
+- 📈 Sales
+- 💰 Profit
+- 🌍 Regions
+- 📦 Products
+- 📊 KPIs
+- 🤖 Machine Learning
+""")
+user_question = st.text_area(
+    "Ask a business question",
+    placeholder="Example: Which region is performing best?"
+)
+st.caption("💡 Suggested Questions")
+
+col1, col2 = st.columns(2)
+
+with col1:
+    st.code("Which region performs best?")
+    st.code("Explain dashboard KPIs")
+
+with col2:
+    st.code("How does discount affect profit?")
+    st.code("Which category has highest sales?")
+
+if st.button("Ask AI"):
+
+    if user_question.strip() == "":
+        st.warning("Please enter a question.")
+
+    else:
+
+        with st.spinner("🧠 AI is analyzing business data..."):
+
+            answer = ask_rag(user_question)
+            st.session_state.chat_history.append(
+    {
+        "question": user_question,
+        "answer": answer
+    }
+)
+
+        st.markdown("## 🤖 AI Business Assistant")
+
+if "answer" in locals():
+    st.markdown(answer)
+    st.markdown("---")
+from datetime import datetime
+
+if "answer" in locals():
+
+    from datetime import datetime
+
+    st.caption(
+        f"🕒 Generated at {datetime.now().strftime('%d %b %Y %I:%M %p')}"
+    )
+
+    st.progress(100)
+
+    st.caption("Confidence: High (Knowledge Base Match)")
 st.markdown("---")
 
+if st.button("🗑 Clear Chat History"):
+
+    st.session_state.chat_history = []
+
+    st.rerun()
+
+st.subheader("📝 Chat History")
+
+if len(st.session_state.chat_history) > 0:
+
+    for chat in reversed(st.session_state.chat_history):
+
+        with st.expander(chat["question"]):
+
+            st.markdown(chat["answer"])
+    with st.expander(chat["question"]):
+
+        st.markdown(chat["answer"])
+st.markdown("---")
 st.markdown(
     """
-    <div style='text-align:center; color:gray;'>
-        📊 Smart Sales Analytics & Revenue Prediction System <br>
-        Developed by <b>Kasturi Bhide</b> using Python, Streamlit, Plotly & Machine Learning
+    <div style="text-align:center;">
+        <h4>Project Developed by</h4>
+        <p><b>Kasturi Anant Bhide</b></p>
+        ...
     </div>
     """,
-    unsafe_allow_html=True
+    unsafe_allow_html=True,
 )

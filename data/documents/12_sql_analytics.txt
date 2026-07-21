@@ -1,0 +1,33 @@
+SQL ANALYTICS
+
+SQL is used to analyze business data.
+
+Typical SQL reports include:
+
+Top Selling Categories
+
+Most Profitable Products
+
+Loss Making Products
+
+Sales by Region
+
+Average Sales
+
+Monthly Revenue
+
+Top Customers
+
+Order Statistics
+
+SQL helps businesses retrieve historical information quickly.
+
+SQL supports business reporting.
+
+SQL analytics improves decision making.
+
+Businesses use SQL to generate management reports.
+
+SQL queries should be optimized for performance.
+
+Business Intelligence systems depend heavily on SQL.

@@ -1,0 +1,35 @@
+DASHBOARD INSIGHTS
+
+Business dashboards provide real-time visibility into company performance.
+
+Important dashboard insights include:
+
+Highest Sales Category
+
+Highest Profit Category
+
+Most Profitable Region
+
+Lowest Profit Region
+
+Top Selling Products
+
+Top Loss Making Products
+
+Monthly Sales Growth
+
+Monthly Profit Growth
+
+Business managers should compare trends rather than individual values.
+
+Sales growth with falling profit indicates excessive discounts or high operational costs.
+
+High profit with stable sales indicates good pricing strategy.
+
+Managers should investigate sudden changes in regional performance.
+
+Dashboard insights support executive decision making.
+
+Interactive dashboards improve business intelligence.
+
+Businesses should monitor dashboard metrics daily.

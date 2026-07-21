@@ -3,4 +3,12 @@ pandas
 plotly
 scikit-learn
 joblib
+langchain
+langchain-community
+faiss-cpu
+sentence-transformers
+torch
+openai
+huggingface-hub
 numpy
+matplotlib

@@ -1,0 +1,45 @@
+KEY PERFORMANCE INDICATORS
+
+Key Performance Indicators (KPIs) measure business performance.
+
+Total Sales
+
+Represents total revenue generated from all customer orders.
+
+Higher sales indicate better revenue generation.
+
+Total Profit
+
+Represents the net earnings after deducting costs.
+
+Profit is more important than sales because it reflects business sustainability.
+
+Total Orders
+
+Represents the number of completed customer orders.
+
+A high order count generally indicates strong customer engagement.
+
+Sales by Category
+
+Shows which product categories generate the highest revenue.
+
+Profit by Category
+
+Shows which categories contribute the most profit.
+
+Region-wise Sales
+
+Compares revenue generated across different regions.
+
+Monthly Sales Trend
+
+Shows how sales change over time.
+
+KPIs help management make informed business decisions.
+
+Business managers should monitor KPIs regularly.
+
+KPIs help identify opportunities and business risks.
+
+Executive dashboards should always display KPIs clearly.

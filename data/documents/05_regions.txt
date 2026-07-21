@@ -1,0 +1,35 @@
+REGIONAL BUSINESS ANALYSIS
+
+The dashboard divides business into four regions.
+
+West
+
+Generally generates the highest profit.
+
+Often performs well due to strong customer demand.
+
+East
+
+Usually generates high sales.
+
+Profit remains moderate.
+
+Central
+
+Some products generate losses.
+
+Requires careful inventory planning.
+
+South
+
+Produces stable sales.
+
+Generally maintains consistent profitability.
+
+Regional comparison helps management allocate marketing budgets.
+
+Managers should invest more in profitable regions while improving weaker regions.
+
+Regional analysis supports expansion decisions.
+
+Business should compare sales and profit together instead of only sales.

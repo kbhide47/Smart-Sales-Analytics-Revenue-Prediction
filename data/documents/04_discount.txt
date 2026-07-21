@@ -1,0 +1,33 @@
+DISCOUNT ANALYSIS
+
+Discount is the reduction applied to the selling price.
+
+Small discounts can increase sales.
+
+Very high discounts can reduce profit.
+
+Business should avoid unnecessary discounts.
+
+Discount should be used during:
+
+Seasonal sales
+
+Festival offers
+
+Inventory clearance
+
+Customer loyalty campaigns
+
+Large discounts may increase revenue but decrease overall profitability.
+
+Business managers should compare sales growth with profit before increasing discounts.
+
+High discounts should only be offered for products with sufficient profit margins.
+
+Discount strategy should balance customer attraction and business profitability.
+
+Machine Learning considers discount as one of the important prediction features.
+
+Increasing discount generally lowers expected profit.
+
+Businesses should regularly monitor products with high discounts and low profits.

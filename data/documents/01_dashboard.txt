@@ -1,0 +1,33 @@
+SMART SALES ANALYTICS DASHBOARD
+
+The Smart Sales Analytics Dashboard helps businesses monitor sales, profit and customer trends.
+
+The dashboard includes:
+
+Total Sales
+
+Total Profit
+
+Total Orders
+
+Sales by Category
+
+Profit by Category
+
+Region Analysis
+
+Monthly Sales Trend
+
+Top Products
+
+Top Loss Products
+
+SQL Analytics
+
+Machine Learning Prediction
+
+AI Business Assistant
+
+The dashboard is built using Python, Streamlit, SQL, Machine Learning, LangChain, FAISS and OpenRouter.
+
+The dashboard is intended for business managers, analysts and executives.

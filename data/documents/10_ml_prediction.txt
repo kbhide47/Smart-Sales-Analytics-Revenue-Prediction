@@ -1,0 +1,45 @@
+MACHINE LEARNING SALES PREDICTION
+
+The dashboard uses Machine Learning to predict future sales.
+
+Model Used
+
+Linear Regression
+
+Prediction Features
+
+Category
+
+Sub Category
+
+Region
+
+Segment
+
+Ship Mode
+
+Quantity
+
+Discount
+
+Delivery Days
+
+Linear Regression estimates future sales by identifying relationships between historical data and input variables.
+
+Higher quantity generally increases predicted sales.
+
+Large discounts may reduce expected sales value.
+
+Different categories contribute differently to prediction.
+
+Different regions have different sales behaviour.
+
+Prediction helps businesses estimate future demand.
+
+Machine Learning assists inventory planning.
+
+Prediction supports management decision making.
+
+Predictions should be treated as estimates rather than guaranteed outcomes.
+
+Business managers should combine prediction with domain knowledge.

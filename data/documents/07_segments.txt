@@ -1,0 +1,25 @@
+CUSTOMER SEGMENTS
+
+The dashboard contains three customer segments.
+
+Consumer
+
+Largest customer base.
+
+Corporate
+
+Often purchases larger quantities.
+
+Home Office
+
+Moderate purchasing behaviour.
+
+Businesses should customize marketing campaigns for each customer segment.
+
+Customer segmentation improves sales forecasting.
+
+Machine Learning uses customer segment as an important predictive feature.
+
+Understanding customer behaviour helps improve revenue.
+
+Business managers should monitor segment-wise sales regularly.
